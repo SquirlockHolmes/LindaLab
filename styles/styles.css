@@ -1,0 +1,243 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Ensure no margin around the body */
+    padding: 0;
+}
+
+body {
+    width: 950px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    position: relative; /* Allows footer to be positioned relative to the body */
+}
+
+footer {
+    position: absolute; /* Fix the footer in place */
+    bottom: 0; /* Stick it to the bottom of the viewport */
+    width: 100%; /* Make sure it spans the full width of the viewport */
+    height: 100px;
+    padding: 26px;
+    font-weight: 200;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #E5AF42; /* Footer background color */
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+main {
+    margin: 25px 0;
+    padding-bottom: 130px; /* Ensure space for the fixed footer */
+}
+
+header, footer {
+    background-color: #E5AF42;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 25px 25px;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    line-height: 150px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+    width: 250px;
+    margin: 0 75px;
+}
+
+.fake-button:hover, .blue-hover:hover {
+    background-color: #4278e5;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #4278e5;
+    color: white;
+    border: 1px solid #4278e5;
+}
+
+.day-selector li, .small-button {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 2px 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.small-button.selected {
+    background-color: #E5AF42;
+    color: white;
+    border: 1px solid #4278e5;
+}
+
+.day-selector li:hover, .small-button:hover {
+    background-color: #E5AF42;
+}
+
+.day-selector li.selected {
+    background-color: #E5AF42;
+    color: white;
+}
+
+#clear-button {
+    background-color: #E5AF42;
+    color: black;
+    border: 1px solid black;
+    padding: 0px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#clear-button:hover {
+    background-color: #4278e5;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index .flex img {
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    margin-bottom: 12px;
+}
+
+.booking-page {
+    text-align: center;
+}
+
+.booking-page p {
+    margin: 20px 0;
+}
+
+.booking-page .day-selector {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.booking-page .fake-button, .booking-page #clear-button {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.contact button {
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-right: 20px; 
+    font-weight: 600;
+    width: 150px; 
+    text-align: right; 
+}
+
+.form-group:nth-of-type(3) label {
+    margin-top: -100px; 
+}
+
+.form-group input, .form-group textarea {
+    width: 300px; 
+    padding: 10px;
+    border: 2px solid #000; 
+    border-radius: 0px; 
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px; 
+}
+
+.submit-button {
+    background-color: #E5AF42;
+    padding: 20px 20px;
+    border: 2px solid black;
+    border-radius: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 325px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 160px; 
+}
+
+.submit-button:hover {
+    background-color: #4278e5;
+    color: white;
+}
